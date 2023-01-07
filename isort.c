@@ -10,12 +10,12 @@ int main() {
     int arr[ARR_SIZE] = { 0 };
 
     for (int i = 0; i < ARR_SIZE; ++i)
-        scanf("%d", &(*(arr+i)));
+        scanf("%d\t", &(*(arr+i)));
 
     insertion_sort(arr, ARR_SIZE);
 
     for (int i = 0; i < ARR_SIZE; ++i)
-        printf("%d%c", *(arr+i), ((i == (ARR_SIZE - 1)) ? '\n':','));
+        printf("%d,", *(arr+i), ((i == (ARR_SIZE - 1)) ? '\n':','));
 
     return 0;
 }
